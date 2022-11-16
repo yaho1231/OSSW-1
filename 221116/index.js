@@ -11,7 +11,7 @@ const client = (module.exports = new Client({intents:[131071]}));
 const date = new Date();
 
 // 봇과 서버를 연결해주는 부분
-client.login('MTA0MjMwODY0MzcyODY2NjY4NA.GcG6mz.Aa2W8tKDDtj1mtB7nwEUdDSheqC4JLQ8GWAtgw');
+client.login('보안상 토큰이름은 못올린데요');
 
 // discord 봇이 실행될 때 딱 한 번 실행할 코드를 적는 부분
 client.once('ready', () => {
