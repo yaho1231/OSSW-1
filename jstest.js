@@ -29,27 +29,32 @@ client.on("messageCreate", (message) => {
 	if (message.content == "지금 몇시야" || message.content == "몇시" || message.content == "time"){
 		message.reply({content:(date.toLocaleString('ko-kr'))});
 	}
+    // 학식 정보 출력
     if (message.content == "밥"|| message.content == "학식" || message.content == "ㅎㅅ" || message.content == "학생식당"){
         getHtml()
          .then((html) => {
             const $ = cheerio.load(html.data);
             const data = {
+                //첫번째 학식
               mainContents: $('#messhall1 > div:nth-child(1) > div > div > div > ul > li:nth-child(1) > a > h3')
               .text()
               .replace(/[\n\t\&amp;]/g, ''),
+              //두번째 학식
               secondContents: $('#messhall1 > div:nth-child(1) > div > div > div > ul > li:nth-child(2) > a > h3')
               .text()
               .replace(/[\n\t\&amp;]/g, ''),
+              //공통찬
               thirdContents : $('#messhall1 > div:nth-child(2) > table')
               .text()
               .replace(/[\n\t\&amp;\공통찬]/g, '')
               ,
             };
             return data;
-        })
+        }) //학식, 공통찬 출력
         .then((res) => message.reply({content:("(학식)\n" +res.mainContents + "\n" +res.secondContents + "\n[공통] " + res.thirdContents)}));
 		
 	}
+    //코로나 api 시도했으나 실패
     // if ((message.content == "코")){
     //     fetch('https://api.corona-19.kr/korea/beta/?serviceKey={shlPLJDHSB2XoigwjUK1x65YbyZ3W47v9}')
     //     .then((response) => {
