@@ -11,22 +11,17 @@ const koreaNow = new Date(utcNow + koreaTimeDiff); // utc로 변환된 값을 �
 const date = koreaNow;
 const keepAlive = require('./server.js');
 
-const getHtml = async () => {
+const getHtml = async (url) => {
     try {
-      return await axios.get('https://www.hanyang.ac.kr/web/www/re12');
+      return await axios.get(url);
     } catch (error) {
       console.error(error);
     }
   };
-
   //>>>>>>>>>>>>>>>>>>>>>>>>>>>추가된부분
   //멜론
   var melon ="";
-
-
   var crawledMusic = []
-  
-  
     const URL = `https://www.melon.com/chart/`;
   
     axios.get(URL).then(res => {
@@ -83,7 +78,6 @@ const getHtml = async () => {
   var t23 = ["23:00"];
   
   var arr = [t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17, t18, t19, t20, t21, t22, t23];
-  
   //>>>>>>>>>>>>>>>>>>>>>>>>>>>>추가ㅣ
 
 
@@ -103,8 +97,8 @@ client.on("messageCreate", (message) => {
 		message.reply({content:(date.toLocaleString('ko-kr'))});
 	}
     // 학식 정보 출력
-    if (message.content == "밥"|| message.content == "학식" || message.content == "ㅎㅅ" || message.content == "학생식당"){
-        getHtml()
+    if (message.content == "오늘학식"|| message.content == "학식" || message.content == "ㅎㅅ" || message.content == "학생식당"){
+        getHtml('https://www.hanyang.ac.kr/web/www/re12')
          .then((html) => {
             const $ = cheerio.load(html.data);
             const data = {
@@ -128,10 +122,77 @@ client.on("messageCreate", (message) => {
             }
             return data;
         }) //학식, 공통찬 출력
-        .then((res) => message.reply({content:("(학식) 운영시간 : 11:30 ~ 13:30\n" +res.mainContents + "\n" +res.secondContents + "\n[공통] " + res.thirdContents)}));
+        .then((res) => message.reply({content:("(학식1) 운영시간 : 11:30 ~ 13:30\n" +res.mainContents + "\n" +res.secondContents + "\n[공통] " + res.thirdContents)}));
 		
 	}
+  if (message.content == "교직" || message.content == "교식"|| message.content == "교직원식" || message.content == "ㄱㅈ" || message.content == "교직원식당"){
+    getHtml('https://www.hanyang.ac.kr/web/www/re11')
+     .then((html) => {
+        const $ = cheerio.load(html.data);
+        const data = {
+            //첫번째 교식
+          mainContents: $('#messhall1 > div:nth-child(1) > div > div > div > ul > li:nth-child(1) > a > h3')
+          .text()
+          .replace(/[\n\t]/g, '')
+          .replace(/[*]/g, ' '),
+        };
+        if(data.mainContents == ''){
+          data.mainContents = "오늘은 교식이 없습니다.";
+        }
+        return data;
+    }) //학식, 공통찬 출력
+    .then((res) => message.reply({content:("(교직원 식당) 운영시간 : 11:30 ~ 13:30\n" +res.mainContents)}));
+
+}
+if (message.content == "기숙사식당"|| message.content == "긱식"|| message.content == "오늘기식"|| message.content == "기식" || message.content == "ㄱㅅ" || message.content == "창의인재원식당"){
+  getHtml('https://www.hanyang.ac.kr/web/www/re13')
+   .then((html) => {
+      const $ = cheerio.load(html.data);
+      const data = {
+        //조식
+        firstContents: $('#messhall1 > div:nth-child(1) > div > div > div > ul > li > a > h3')
+        .text()
+        .replace(/[\n\t]/g, '')
+        .replace(/[\[특식\]]/g, ''),
+        //중식1
+        secondContents: $('#messhall1 > div:nth-child(2) > div > div > div > ul > li:nth-child(1) > a > h3')
+        .text()
+        .replace(/[\n\t]/g, '')
+        .replace(/[\[특식\]]/g, ''),
+        //중식2
+        thirdContents : $('#messhall1 > div:nth-child(2) > div > div > div > ul > li:nth-child(2) > a > h3')
+        .text()
+        .replace(/[\n\t]/g, '')
+        .replace(/[\[특식\]]/g, ''),
+        // 석식
+        forthContents : $('#messhall1 > div:nth-child(3) > div > div > div > ul > li > a > h3')
+        .text()
+        .replace(/[\n\t]/g, '')
+        .replace(/[\[특식\]]/g, '')
+        ,
+      };
+      if(data.firstContents == ''){
+        data.firstContents = "오늘은 조식이 없습니다.";
+      }
+      else if(data.secondContents == ''){
+        data.secondContents = "오늘은 중식 A 이/가 없습니다."
+      }
+      else if(data.thirdContents == ''){
+        data.thirdContents = "오늘은 중식 B 이/가 없습니다."
+      }
+      else if(data.forthContents == ''){
+        data.forthContents = "오늘은 석식이 없습니다."
+      }
+      return data;
+  }) //학식, 공통찬 출력
+  .then((res) => message.reply({content:("(창의인재원 식당)\n[조식 07:40~09:00]\n" +res.firstContents + "\n[중식 A 11:30~13:20]\n" +res.secondContents + "\n[중식 B 11:30~13:20]\n" + res.thirdContents + "\n[석식 17:10~18:40]\n" + res.forthContents)}));
+
+}
+
 //>>>>>>>>>>>추가
+if (message.content == "지금 몇시야" || message.content == "몇시" || message.content == "time"){
+  message.reply({content:(date.toLocaleString('ko-kr'))});
+}
 if ((message.content == "멜론") || (message.content == "음악") || (message.content == "차트")){
   message.reply({content:(melon)});
 }
@@ -157,4 +218,4 @@ if ((message.content == "집") || (message.content == "셔틀") || (message.cont
 });
 keepAlive();
 // 봇과 서버를 연결해주는 부분
-client.login('MTAzOTc5OTUyNzIwMjM2MTM4NA.GSFq4_.a-tHKeflwWFRt4Kd9fWdbFr3sNtBqlGZc2Fi9Y');
+client.login(process.env['TOKEN']);
