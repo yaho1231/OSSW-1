@@ -18,10 +18,15 @@ const getHtml = async () => {
       console.error(error);
     }
   };
+
   //>>>>>>>>>>>>>>>>>>>>>>>>>>>추가된부분
   //멜론
   var melon ="";
+
+
   var crawledMusic = []
+  
+  
     const URL = `https://www.melon.com/chart/`;
   
     axios.get(URL).then(res => {
@@ -78,6 +83,7 @@ const getHtml = async () => {
   var t23 = ["23:00"];
   
   var arr = [t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17, t18, t19, t20, t21, t22, t23];
+  
   //>>>>>>>>>>>>>>>>>>>>>>>>>>>>추가ㅣ
 
 
@@ -126,9 +132,6 @@ client.on("messageCreate", (message) => {
 		
 	}
 //>>>>>>>>>>>추가
-if (message.content == "지금 몇시야" || message.content == "몇시" || message.content == "time"){
-  message.reply({content:(date.toLocaleString('ko-kr'))});
-}
 if ((message.content == "멜론") || (message.content == "음악") || (message.content == "차트")){
   message.reply({content:(melon)});
 }
@@ -154,4 +157,4 @@ if ((message.content == "집") || (message.content == "셔틀") || (message.cont
 });
 keepAlive();
 // 봇과 서버를 연결해주는 부분
-client.login(process.env['TOKEN']);
+client.login('MTAzOTc5OTUyNzIwMjM2MTM4NA.GSFq4_.a-tHKeflwWFRt4Kd9fWdbFr3sNtBqlGZc2Fi9Y');
