@@ -249,10 +249,10 @@ if ((message.content == "점메추") || (message.content == "점심") || (messag
 #### 4-8-3. 활용법
 replit.com 사이트를 활용하여 서버를 구동하고 사이트가 다운되지 않도록 uptimerobot.com 사이트를 활용해 주기적으로 서버에 핑을 보내주어 24시간 구동이 가능하도록 함
 
-## 참고 라이센스
-### dicord.js 
-### cheerio
-### axios
+## 참고 라이센스 바로가기
+### [dicord.js](https://github.com/discordjs/discord.js/blob/main/LICENSE) 
+### [cheerio](https://github.com/cheeriojs/cheerio/blob/main/LICENSE)
+### [axios](https://github.com/axios/axios/blob/v1.x/LICENSE)
 ## 참고사이트 모음
 
 [디코 기초세팅(토큰발급)](https://velog.io/@junsugi/Discord.js%EB%A1%9C-Bot-%EB%A7%8C%EB%93%A4%EA%B8%B0#3-discordjs-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
