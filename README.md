@@ -242,6 +242,7 @@ if ((message.content == "점메추") || (message.content == "점심") || (messag
 #### 4-8-1. replit.com
 <img width="1392" alt="uptimerobot" src="https://user-images.githubusercontent.com/87527275/205859958-06330ce4-2258-4bc4-81ec-fd3866afad0c.png">
 웹사이트에서 코드를 구동할 수 있게 도와줌
+
 #### 4-8-2. uptimerobot.com
 <img width="1384" alt="replit" src="https://user-images.githubusercontent.com/87527275/205859964-6dda63a3-b175-4dbf-abc2-5a0c2f38068a.png">
 주기적으로 웹사이트를 방문하여 서버의 상태를 모니터링함
