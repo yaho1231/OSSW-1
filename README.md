@@ -238,6 +238,9 @@ if ((message.content == "점메추") || (message.content == "점심") || (messag
 }
 
  ```
+### 4-8. 봇 24시간 구동
+
+
 ## 참고 라이센스
 ### dicord.js 
 ### cheerio
