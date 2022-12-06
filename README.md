@@ -23,4 +23,11 @@ _italic_
 ## 4.	결과물
 
 
-[image](file:///Users/seongdongjin/Desktop/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-12-06%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.56.32.png)
+<img width="873" alt="교직원식당" src="https://user-images.githubusercontent.com/87527275/205844391-861874b3-3840-4cf5-aa46-4de167788c40.png">
+<img width="871" alt="멜론" src="https://user-images.githubusercontent.com/87527275/205844395-a21aa901-6933-4d94-80cc-f669fce859af.png">
+<img width="877" alt="셔틀버스시간" src="https://user-images.githubusercontent.com/87527275/205844398-2db0cf4d-afc3-4596-90ee-fbe190532d00.png">
+<img width="876" alt="시간" src="https://user-images.githubusercontent.com/87527275/205844402-2e146929-fb2d-4857-8727-60edb4b660c2.png">
+<img width="878" alt="점심메뉴추천" src="https://user-images.githubusercontent.com/87527275/205844405-a891e3cd-2972-4a4b-8a00-311bd6db64af.png">
+<img width="871" alt="창의인재원식당" src="https://user-images.githubusercontent.com/87527275/205844407-35dfbffb-4400-4373-bad2-151a4cf36c10.png">
+<img width="887" alt="학생식당" src="https://user-images.githubusercontent.com/87527275/205844411-9e4b500e-4f11-45e6-b2c4-bba21a253594.png">
+
