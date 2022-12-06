@@ -257,56 +257,38 @@ replit.com 사이트를 활용하여 서버를 구동하고 사이트가 다운�
 
 [디코 기초세팅(토큰발급)](https://velog.io/@junsugi/Discord.js%EB%A1%9C-Bot-%EB%A7%8C%EB%93%A4%EA%B8%B0#3-discordjs-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 
-Client code (개발자 문서)
-https://github.com/discordjs/discord.js 
+[Client code (개발자 문서)](https://github.com/discordjs/discord.js) 
 
-멜론차트 크롤링
-https://latte1114.tistory.com/463
+[멜론차트 크롤링](https://latte1114.tistory.com/463)
 
-한국시간 객체생성
-https://velog.io/@sunn3842/JS-new-Date-
+[한국시간 객체생성](https://velog.io/@sunn3842/JS-new-Date-)
 
-음식 리스트 참고
-https://ko.wiktionary.org/wiki/분류:한국어_음식
+[음식 리스트 참고](https://ko.wiktionary.org/wiki/분류:한국어_음식)
 
-배열 생성 함수 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array
+[배열 생성 함수](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-랜덤상수 뽑는 함수(Math.floor(), Math.random())
-https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+[랜덤상수 뽑는 함수(Math.floor(), Math.random())](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
 
-셔틀시간표 data 출처 : 
-https://www.hanyang.ac.kr/web/www/shuttle_bus_timetable
+[셔틀시간표 data 출처](https://www.hanyang.ac.kr/web/www/shuttle_bus_timetable)
 
-현재Hour 추출법 (var h)
-https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours
+[현재Hour 추출법 (var h)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours)
 
-웹 크롤링 : 
-https://velog.io/@yesdoing/Node.js-%EC%97%90%EC%84%9C-%EC%9B%B9-%ED%81%AC%EB%A1%A4%EB%A7%81%ED%95%98%EA%B8%B0-wtjugync1md
+[웹 크롤링](https://velog.io/@yesdoing/Node.js-%EC%97%90%EC%84%9C-%EC%9B%B9-%ED%81%AC%EB%A1%A4%EB%A7%81%ED%95%98%EA%B8%B0-wtjugync1md)
 
-웹 크롤링 
-replace : 
-https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+[웹 크롤링 replace](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 
-웹 크롤링 : 
-https://onlydev.tistory.com/103
+[웹 크롤링](https://onlydev.tistory.com/103)
 
-웹 크롤링 : 
-https://velog.io/@jehjong/nodejs-%ED%81%AC%EB%A1%A4%EB%A7%81-1%EC%9E%A5.-%EC%9B%B9%ED%81%AC%EB%A1%A4%EB%9F%AC-%ED%8C%8C%EC%8B%B1#1-4-axios-cheerio%EB%A1%9C-%ED%81%AC%EB%A1%A4%EB%A7%81
+[웹 크롤링](https://velog.io/@jehjong/nodejs-%ED%81%AC%EB%A1%A4%EB%A7%81-1%EC%9E%A5.-%EC%9B%B9%ED%81%AC%EB%A1%A4%EB%9F%AC-%ED%8C%8C%EC%8B%B1#1-4-axios-cheerio%EB%A1%9C-%ED%81%AC%EB%A1%A4%EB%A7%81)
 
-학식 정보 : 
-https://www.hanyang.ac.kr/web/www/re12
+[학식 정보](https://www.hanyang.ac.kr/web/www/re12)
 
-디코봇 초기세팅 : 
-https://www.youtube.com/watch?v=4LAGhoYQl4o
+[디코봇 초기세팅](https://www.youtube.com/watch?v=4LAGhoYQl4o)
 
-디코개발자 사이트 : 
-https://discord.com/developers/applications/1039799527202361384/bot
+[디코개발자 사이트](https://discord.com/developers/applications/1039799527202361384/bot)
 
-디코봇 초기세팅 : 
-https://velog.io/@junsugi/Discord.js%EB%A1%9C-Bot-%EB%A7%8C%EB%93%A4%EA%B8%B0#3-discordjs-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
+[디코봇 초기세팅](https://velog.io/@junsugi/Discord.js%EB%A1%9C-Bot-%EB%A7%8C%EB%93%A4%EA%B8%B0#3-discordjs-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 
-24시간구동에 사용 : 
-https://replit.com/@yaho1231/UnrulyStrictInstructionset
+[24시간구동에 사용](https://replit.com/@yaho1231/UnrulyStrictInstructionset)
 
-24시간구동에 사용 : 
-https://uptimerobot.com/dashboard#mainDashboard
+[24시간구동에 사용](https://uptimerobot.com/dashboard#mainDashboard)
