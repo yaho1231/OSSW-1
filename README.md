@@ -160,6 +160,11 @@ axios.get(URL).then(res => {
     console.log("server response error");
   }
 });
+client.on("messageCreate", (message) => {
+if ((message.content == "멜론") || (message.content == "음악") || (message.content == "차트")) {
+    message.reply({ content: (melon) });
+  }
+}
 
 ```
 
@@ -218,4 +223,16 @@ if (message.content == "지금 몇시야" || message.content == "몇시" || mess
  ```
  
 <img width="878" alt="점심메뉴추천" src="https://user-images.githubusercontent.com/87527275/205844405-a891e3cd-2972-4a4b-8a00-311bd6db64af.png">
+
+```js
+
+var lunch = new Array("가락지빵", "가래떡", .... , "후식");
+var num = (Math.floor((Math.random() * 10000))) % 400;
+client.on("messageCreate", (message) => {
+if ((message.content == "점메추") || (message.content == "점심") || (message.content == "뭐먹지")) {
+    message.reply({ content: (lunch[num]) });
+  }
+}
+
+ ```
 
