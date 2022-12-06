@@ -23,13 +23,15 @@ _italic_
 ## 4.	결과물
 
 <img width="871" alt="멜론" src="https://user-images.githubusercontent.com/87527275/205844395-a21aa901-6933-4d94-80cc-f669fce859af.png">
+
 ```js
+
 var melon = "";
 var crawledMusic = []
 const URL = `https://www.melon.com/chart/`;
 
 axios.get(URL).then(res => {
-  console.log(res.status)
+  console.log(res.status);
   if (res.status == 200) {
 
     // empty array
@@ -46,13 +48,13 @@ axios.get(URL).then(res => {
       };
     });
     for (var i = 0; i < 50; i++) {
-      // console.log("<<" + (i+1) + "위>>\n" + "제목 : " + crawledMusic[i].title + "\n가수 : " + crawledMusic[i].artist + "\n")
+      // console.log("<<" + (i+1) + "위>>\n" + "제목 : " + crawledMusic[i].title + "\n가수 : " + crawledMusic[i].artist + "\n");
       melon = melon + (`${i + 1}위\n제목 : ${crawledMusic[i].title}\n가수 : ${crawledMusic[i].artist}\n\n`);
     }
   } else {
-    console.log("server response error")
+    console.log("server response error");
   }
-})
+});
 
 ```
 
