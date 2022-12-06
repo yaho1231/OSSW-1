@@ -238,4 +238,8 @@ if ((message.content == "점메추") || (message.content == "점심") || (messag
 }
 
  ```
-
+## 참고 라이센스
+### dicord.js 
+### cheerio
+### axios
+## 참고사이트 모음
